@@ -15,7 +15,7 @@ class UMaterialInterface;
  * Everything here is optional: the tools work with every setting left empty.
  */
 UCLASS(config = Editor, defaultconfig, meta = (DisplayName = "TechArt Toolbox"))
-class UTechArtToolboxSettings : public UDeveloperSettings
+class TECHARTTOOLBOX_API UTechArtToolboxSettings : public UDeveloperSettings
 {
 	GENERATED_BODY()
 

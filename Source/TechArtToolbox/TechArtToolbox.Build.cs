@@ -20,8 +20,6 @@ public class TechArtToolbox : ModuleRules
 
 		PrivateDependencyModuleNames.AddRange(new string[]
 		{
-			"AnimToTexture",			// VAT page
-			"AnimToTextureEditor",
 			"AssetRegistry",
 			"AssetTools",
 			"ContentBrowser",
@@ -34,6 +32,7 @@ public class TechArtToolbox : ModuleRules
 			"DeveloperSettings",		// Project Settings page
 			"EditorFramework",
 			"EditorWidgets",
+			"GameProjectGeneration",	// VAT tab: making the .uproject writeable when enabling AnimToTexture
 			"Engine",
 			"ImageCore",
 			"InputCore",

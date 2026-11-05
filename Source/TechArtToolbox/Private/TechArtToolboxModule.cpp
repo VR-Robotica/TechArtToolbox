@@ -23,7 +23,7 @@
 #if TECHARTTOOLBOX_WITH_RIG
 #include "Menu_ControlRig.h"
 #endif
-#include "Menu_VATBake.h"
+#include "Menu_VATPlugin.h"
 
 #include "ToolMenus.h"
 #include "LevelEditor.h"
@@ -242,7 +242,7 @@ TSharedRef<SDockTab> FTechArtToolboxModule::OnSpawnTabWindow(const FSpawnTabArgs
 #else
 				+ SWidgetSwitcher::Slot()[ SNullWidget::NullWidget ]	// keeps the slot order; the Rig page needs UE 5.7+
 #endif
-				+ SWidgetSwitcher::Slot()[ PageSlot(SNew(SMenu_VATBake)) ]
+				+ SWidgetSwitcher::Slot()[ PageSlot(SNew(SMenu_VATPlugin)) ]
 				+ SWidgetSwitcher::Slot()[ PageSlot(SNew(SMenu_ConsolidateMaterials)) ]
 				+ SWidgetSwitcher::Slot()[ PageSlot(SNew(SMenu_EdgeMesh)) ]
 			]

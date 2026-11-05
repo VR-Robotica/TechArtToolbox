@@ -98,6 +98,8 @@ Checks a folder or the Content Browser selection against the project's naming an
 <img width="1920" height="1080" alt="UE5_TAT_10_VATBaker" src="https://github.com/user-attachments/assets/209ebad8-fc05-44fa-8e4e-8e08ec65c776" />
 
 - Sets up and runs Unreal's AnimToTexture plugin for every LOD, in Bone mode.
+- AnimToTexture is optional: if it isn't enabled, the page shows an **Enable AnimToTexture** button (it adds the
+  plugin to the .uproject, like Edit > Plugins) and then **Restart Editor**. The other pages work without it.
 - You pick a skeletal mesh and the animations to bake. There's a seamless-loop option.
 - It creates:
   - one static mesh and one Data Asset per LOD;
@@ -174,8 +176,8 @@ Put the .rig.json next to the skeletal mesh (or one folder up) and the Rig page 
 ## Installation
 
 Copy the `TechArtToolbox` folder into your project's `Plugins` folder (or install from Fab), then enable
-**TechArt Toolbox** in Edit > Plugins and restart the editor. It turns on the engine's AnimToTexture, Control Rig and
-Control Rig Modules plugins, which the VAT and Rig pages use.
+**TechArt Toolbox** in Edit > Plugins and restart the editor. It turns on the engine's Control Rig and
+Control Rig Modules plugins, which the Rig page uses. The VAT page also needs AnimToTexture, which it offers to enable.
 
 ## Support
 

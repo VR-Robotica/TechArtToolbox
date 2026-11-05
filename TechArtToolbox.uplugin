@@ -21,12 +21,19 @@
 			"Type": "Editor",
 			"LoadingPhase": "Default",
 			"PlatformAllowList": [ "Win64", "Mac", "Linux" ]
+		},
+		{
+			"Name": "TechArtToolboxVAT",
+			"Type": "Editor",
+			"LoadingPhase": "None",
+			"PlatformAllowList": [ "Win64", "Mac", "Linux" ]
 		}
 	],
 	"Plugins": [
 		{
 			"Name": "AnimToTexture",
-			"Enabled": true
+			"Enabled": false,
+			"Optional": true
 		},
 		{
 			"Name": "ControlRig",
